@@ -49,7 +49,7 @@ import java.time.LocalTime
 @Composable
 fun BikeScreen(
     bikeViewModel: BikeViewModel = BikeViewModel()
-) { //uistate를 주입 받는 방법은? 메소드도 파라미터로 넘기고
+) { //todo uistate를 주입 받는 방법은? 메소드도 파라미터로 넘기고
 
     val bikeUiState by bikeViewModel.uiState.collectAsStateWithLifecycle() //이걸로해야 값을 계속 관찰할 수 있음~
 
